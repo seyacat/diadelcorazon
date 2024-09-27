@@ -87,6 +87,16 @@ var main = function () {
         h: resolution.height,
         z: 100,
     });
+    var sample = new Image();
+    sample.src = "public/sample.png";
+    addItem({
+        id: 2,
+        img: sample,
+        position: { x: 0, y: 0 },
+        w: resolution.width,
+        h: resolution.height,
+        z: 1,
+    });
     corona.onload = function () {
         refreshCanvas();
     };
